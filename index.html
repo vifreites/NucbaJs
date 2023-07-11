@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/script.js">
+    <link rel="stylesheet" href="assets/style.css">
+    <link rel="stylesheet" href="registro.html">
+    <link rel="stylesheet" href="login.html">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="assets/mediaquerys.css">
+    <link rel="stylesheet" href="assets/animaciones.css">
+    <title>TraumerBier</title>
+</head>
+
+<body>
+    <header class="header">
+        <img src="./assets/img/logo.svg" alt="logo">
+
+        <nav class="navbar">
+            <label for="toggle__menu"><i class="fa-solid fa-bars"></i></label>
+            <input type="checkbox" id="toggle__menu">
+
+
+            <!-- 
+            <input type="checkbox" class="menu-toggle" />
+             <div class="burger-menu"></div> -->
+
+            <!-- <label for="check" id="toggle__menu">
+                <i class="fa-solid fa-bars">
+                    ::before
+                </i>
+            </label> -->
+
+            <ul class="menu">
+                <li><a class="navbar-link" href="#hero">Inicio</a></li>
+                <li><a class="navbar-link" href="#about">La Fábrica</a></li>
+                <li><a class="navbar-link" href="#contact">Contáctanos</a></li>
+            </ul>
+        </nav>
+
+        <nav class="register">
+            <ul>
+                <li><a class="register-link sign-in" href="login.html">Iniciar Sesión</a></li>
+                <li><a class="register-link sign-up" href="registro.html">Regístrate</a></li>
+
+                <div class="cart-label">
+                    <i class="fa-solid fa-cart-shopping" style="color: #c66210;">
+                        <div class="cart-buble">0</div>
+                    </i>
+                </div>
+            </ul>
+            <div class="cart">
+                <h2>Tu compra</h2>
+                <div class="cart-container">
+                    <!-- <div class="cart-item">
+                        <div class="item-info">
+                            <h3 class="item-tittle">NOMBRE</h3>
+                            <p class="item-beer">shop</p>
+                            <span class="item-price">$</span>
+                        </div>
+                        <div class="item-handler">
+                            <span class="quantity-handler down" data-id="ID">-</span>
+                            <span class="item-quantity">CANTIDAD</span>
+                            <span class="quantity-handler up" data-id="ID">+</span>
+                        </div>
+
+                    </div> -->
+                </div>
+                <span class="divider"></span>
+                <div class="cart-total">
+                    <p>Total:</p>
+                    <span class="total">$0</span>
+                </div>
+                <button class="btn-buy">Comprar</button>
+                <button class="btn-delete">Vaciar carrito</button>
+            </div>
+            <div class="overlay"></div>
+            <div class="icon-login">
+                <a href="login.html"></a>
+            </div>
+
+
+        </nav>
+    </header>
+
+
+    <main class="home">
+        <!-- HERO SECTION -->
+        <section id="hero">
+
+
+            <div class="section-info">
+                <h1>bienvenidos a nuestra <br /><span class="span-title">brewhouse</span></h1>
+                <p>Los invitamos a conocer el detrás de la lata, la cocina de nuestras cervezas.</p>
+
+                <div class="button-container">
+                    <a href="login.html" class="first-btn">Entrar</a>
+                    <a href="registro.html" class="second-btn">Registro</a>
+                </div>
+            </div>
+            <img src="./assets/img/tirada.jpg" alt="" class="hero-img">
+        </section>
+
+        <section class="info-text">
+            <p> Nuestras cervezas nacen de un proceso exhaustivo, cuidando cada detalla para lograr una cerveza
+                artesanal premium, con sabores marcados y bien definidos.
+                Los lúpulos utilizados son de cosecha local y de altura, siendo amigables con el medio ambiente.
+                Contamos con una fábrica de cerveza artesanal modelo, no solo a nivel local, sino a nivel
+                latinoamericano, con maquinaria de primera generación, permitiéndonos contar con un excelente proceso
+                productivo para ofrecer la misma calidad de nuestros estilos, tanto en barril como en lata. </p>
+
+        </section>
+        <img src="./assets/img/mancha-gris.svg" alt="">
+
+
+        <!-- PRODUCTS SECTION -->
+        <section id="card_info">
+            <h2>Todos los estilos tu estilo</h2>
+            <div class="products_Container">
+                <!-- <div class="product">
+                    <div class="card">
+                        <div class="flip-card-inner">
+                            <div class="card-front">
+                                <img src="./assets/img/lata-golden.png" alt="golden">
+                                <hr />
+                                <br>
+                                <h3>Golden</h3>
+                            </div>
+
+                            <div class="card-back">
+                                <ul>
+                                    <li>IBU 18</li>
+                                    <li>estilo Golden</li>
+                                    <li>Mansa y de amargo apaciguado.</li>
+                                    <li>Cerveza en la que resalta el dulzor de las maltas,sin dejar afuera los aromas
+                                        otorgados por el lúpulo.</li>
+                                    <li>Temperatura ideal 6°C</li>
+                                </ul>
+                                <a href="#" class="button-card">Comprar</a>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="card">
+                        <div class="flip-card-inner">
+                            <div class="card-front">
+                                <img src="./assets/img/lata-apa.png" alt="apa">
+                                <hr />
+                                <br>
+                                <h3>Apa</h3>
+                            </div>
+
+                            <div class="card-back">
+                                <ul>
+                                    <li>IBU 30</li>
+                                    <li>estilo APA</li>
+                                    <li>El lúpulo nutre esta cerveza con aromas y sabores cítricos.</li>
+                                    <li>Las maltas colaboran con un toque dulce y acaramelado para balancear el amargor.
+                                    </li>
+                                    <li>Temperatura ideal 8°C</li>
+                                </ul>
+                                <a href="#" class="button-card">Comprar</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="flip-card-inner">
+                            <div class="card-front">
+                                <img src="./assets/img/lata-ipa.png" alt="ipa">
+                                <hr />
+                                <br>
+                                <h3>ipa</h3>
+                            </div>
+
+                            <div class="card-back">
+                                <ul>
+                                    <li>IBU 50</li>
+                                    <li>estilo ipa</li>
+                                    <li>osados agregados de lúpulo durante toda su gestación aportan tonos cítricos y
+                                        picantes.</li>
+                                    <li>Recomendada para los amantes de las nuevas sensaciones y amargor colosal.</li>
+                                    <li>Temperatura ideal 8°C</li>
+                                </ul>
+                                <a href="#" class="button-card">Comprar</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="flip-card-inner">
+                            <div class="card-front">
+                                <img src="./assets/img/lata-amber.png" alt="amber">
+                                <hr />
+                                <br>
+                                <h3>amber</h3>
+                            </div>
+
+                            <div class="card-back">
+                                <ul>
+                                    <li>IBU 30</li>
+                                    <li>estilo amber</li>
+                                    <li>sobria cooperación entre maltas y lúpulos.</li>
+                                    <li>Cerveza de acentuado cuerpo que en boca recrea sabores a caramelo, tonos
+                                        cítricos, frutados originados por un notable respaldo del lúpulo.</li>
+                                    <li>Temperatura ideal 6°C</li>
+                                </ul>
+                                <a href="#" class="button-card">Comprar</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="flip-card-inner">
+                            <div class="card-front">
+                                <img src="./assets/img/lata-porter.png" alt="porter">
+                                <hr />
+                                <br>
+                                <h3>porter</h3>
+                            </div>
+
+                            <div class="card-back">
+                                <ul>
+                                    <li>IBU 30</li>
+                                    <li>estilo porter</li>
+                                    <li>elegante combinacion de malta, caramelo y tostadas con lúpulos que aportan dejos
+                                        herbales y terrosos.</li>
+                                    <li>Con cuerpo que entrega en paladar sabores cafe y algo más.</li>
+                                    <li>Temperatura ideal 6°C</li>
+                                </ul>
+                                <a href="#" class="button-card">Comprar</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="flip-card-inner">
+                            <div class="card-front">
+                                <img src="./assets/img/lata-lab.png" alt="LÄB">
+                                <hr />
+                                <br>
+                                <h3>LÄB</h3>
+                            </div>
+
+                            <div class="card-back">
+                                <ul>
+                                    <li>IBU 30</li>
+                                    <li>estilo apa</li>
+                                    <li>El lúpulo nutre esta cerveza con aromas y sabores cítricos y frutados.</li>
+                                    <li>El resultado es una cerveza liviana y refrescante.</li>
+                                    <li>Temperatura ideal 8°C</li>
+                                </ul>
+                                <a href="#" class="button-card">Comprar</a>
+                            </div>
+                        </div>
+                    </div>
+                </div> -->
+            </div>
+        </section>
+
+
+        <!-- ABOUT US SECTION -->
+        <section id="about">
+            <h2>Todos los estilos <span>tu estilo</span></h2>
+            <div class="text-container">
+                <div class="title-about">
+                    <h2>somos Träumer</h2>
+                    <p>
+                        Somos una compañía de cerveza, creadores de marcas y productos de calidad.
+
+                        Nos encanta innovar y nos apasiona lo que hacemos, es por esto que trabajamos día a día para que
+                        nuestros clientes sean nuestros fans.
+                        Estamos integrados verticalmente y buscamos la sustentabilidad, tanto en lo productivo como en
+                        las relaciones con la comunidad y el cuidado del medio ambiente.</p>
+                </div>
+                <img src="./assets/img/empresa3.jpg" alt="">
+            </div>
+        </section>
+        <img src="./assets/img/mancha-gris.svg" alt="">
+
+
+        <!-- CONTACT US SECTION -->
+        <section id="contact">
+            <div class="title-contact-us">
+                <h2>Todos los estilos <span>tu estilo</span></h2>
+                <!-- hacer el span
+                que el h2 se ponga al medio en somos traumer -->
+                <h2>Donde se cocina la magia</h2>
+
+            </div>
+
+            <div class="content-contact">
+                <div class="grid-area">
+                    <div class="maps">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d19274.866768445427!2d-63.9468790384182!3d-31.34939548183758!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2sar!4v1688559545299!5m2!1ses!2sar"
+                            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+
+                    <div class="form">
+                        <form>
+                            <label for="nombre">Dejanos tu mensaje</label>
+                            <input type="text" id="nombre" placeholder="Nombre y Apellido">
+                            <label for="email">Correo Electrónico</label>
+                            <input type="email" id="email" placeholder="Correo Electrónico">
+                            <label for="mensaje">Mensaje</label>
+                            <input type="text" id="mensaje" placeholder="Hola, quería consultar...">
+                            <div class="button-send">
+                                <button type="submit">Enviar</button>
+                            </div>
+                            <img src="./assets/img/logo.svg" alt="logo" class="logo">
+                        </form>
+
+                    </div>
+
+                    <div class="social">
+                        <div class="grid-social">
+                            <div class="instagram">
+                                <img src="./assets/img/instagram.png" alt="">
+                                <p>traumerbier</p>
+                            </div>
+
+                            <div class="whatsapp">
+                                <img src="./assets/img/ring-phone.png" alt="">
+                                <p>+54 351 5225525</p>
+                            </div>
+
+                            <div class="email">
+                                <img src="./assets/img/email.png" alt="">
+                                <p>hola@ytraumerbier</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FOOTER SECTION -->
+        <footer>
+            <p>© HECHO CON ♥ POR VIFREITES - 2023 - TraumerBier </p>
+        </footer>
+    </main>
+    <div class="add-modal"></div>
+    <script src="./assets/data.js"></script>
+    <script src="./assets/script.js"></script>
+</body>
+
+</html>

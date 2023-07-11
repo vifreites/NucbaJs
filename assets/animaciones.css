@@ -1,0 +1,154 @@
+.navbar-link:hover{
+    transition: all 0.25s ease-in;
+    font-weight: 500;
+    padding: 0.1px 2px;
+  }
+  
+  .navbar li {
+    position: relative;
+    padding: 0;
+  }
+  
+  .navbar li a::after {
+    content: "";
+    height: 2px;
+    width: 100%;
+    background: #724006;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transform: scaleX(0);
+    transform-origin: bottom left;
+    transition: transform 0.15s ease;
+  }
+  
+  .navbar li a:hover::after {
+    transform-origin: bottom center;
+    transform: scaleX(1);
+  }
+  .show-overlay{
+    display: block;
+  }
+  /* .navbar{
+    
+  } */
+  .cart-icon {
+    transition: all 0.2s ease-out;
+  }
+  
+  .cart-icon:hover {
+    color: var(--electric);
+    border-color: var(--electric);
+    transition: all 0.2s ease-in;
+  }
+  
+  /*Botones del carrito*/
+  .quantity-handler {
+    transition: all 0.2s ease-in;
+  }
+  
+  .quantity-handler:hover {
+    cursor: pointer;
+    background-color: var(--electric);
+    transition: all 0.2s ease-in;
+  }
+  
+  /*Botones comprar(carrito) y add(producto) y BENUCBER(Hero)*/
+  .btn-add,
+  .hero-info a {
+    transition: all 0.2s ease-out;
+  }
+  
+  .btn-add:hover,
+  .hero-info a:hover {
+    background-color: var(--fire);
+    transition: all 0.2s ease-in;
+  }
+  
+  /* Boton ver mas de la sección de productos */
+  .btn-load {
+    transition: all 0.2s ease-out;
+    font-weight: 600;
+  }
+  
+  .btn-load:hover {
+    background-color: var(--electric);
+    color: var(--text-white);
+    transition: all 0.2s ease-in;
+  }
+  .sign-in:hover {
+    transition: all 0.2s ease-out;
+    background-color:#724006;
+    
+  }
+  .sign-up:hover {
+    transition: all 0.2s ease-out;
+    background-color:#724006;
+
+  }
+  
+
+  /* HERO SECTION */
+  
+  .hero-img {
+    opacity: 0;
+    animation: girl-home 1.2s forwards;
+  }
+  
+  @keyframes girl-home {
+    0% {
+      opacity: 0;
+      transform: translateX(-70px);
+    }
+    50% {
+      opacity: 0.7;
+      transform: translateX(5px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(20px);
+    }
+  
+  }
+  
+  .first-btn:hover{
+    background-color: #ffb700;
+    color: white;
+    transition: all 0.5s cubic-bezier(0.19, 1, 0.22, 1);
+    font-size: 21px;
+    padding: 7.5px 31px;
+    box-shadow:
+    2px 2px 2px rgba(0, 0, 0, 0.1),
+    5px 5px 14px rgba(0, 0, 0, 0.2);
+    border: none;
+    transform: scale(1.03);
+  }
+  
+  .second-btn:hover{
+    transition: all 0.2s ease-in;
+    background-color: #ff9105;
+    color: white;
+    transform: scale(1.02);
+  }
+  
+  
+  /* ABOUT US SECTION */
+  
+  .text-about-section{
+    animation: about-us 1.2s forwards;
+  }
+    @keyframes about-us {
+      0% {
+        opacity: 0;
+        transform: translateY(-70px);
+      }
+      50% {
+        opacity: 0.7;
+        transform: translateY(-10px);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0px);
+      }
+    
+    }

@@ -1,0 +1,347 @@
+@media (max-width:991.98px){
+ 
+    /* HEADER */
+
+    .header{
+        height: 70px;
+        width: 100%;
+    }
+
+    .header img{
+        height: 45px;
+        position: absolute;
+        
+
+    }
+
+
+    /* .burger-menu,
+    .menu-toggle{
+        display: block;
+        right: 15px;
+    }
+
+    .navbar input:checked ~ .menu{
+        right:0;
+    }
+
+    .menu{
+        gap: 35px;
+        padding: 0rem 2rem;
+        justify-content: start;
+        flex-direction: column;
+        align-items: start;
+        position:fixed;
+        top: 0;
+        right: -300px;
+        background-color:#724006;
+        width: 200px;
+        height:100%;
+        padding-top:65px;
+        transition: all 0.5s;
+    }
+
+    .navbar a{
+        color: white;
+        width: 100%;
+        position: absolute;
+        top: 80px;
+        left: 0;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        display: none;
+
+    } */
+    .navbar ul{
+        background: black;
+        width: 100%;
+        position: absolute;
+        top: 80px;
+        left: 0;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        display: none;
+
+    }
+    .navbar i{
+        display: block;
+    }
+    #toggle-menu:checked ~ .navbar-list {
+        display: flex;
+    }
+    /* .navbar li,
+    .navbar li:hover{
+        padding: 20px;
+        font-size: 14px;
+        box-shadow: 0 1px 0 rgba(255, 255, 255, 0.1) inset;
+    }
+
+    .navbar li a::after {
+        background: #ffbf1c69;
+    } */
+
+
+    /* HERO SECTION */
+
+    main {
+        background-size: 100%;
+    }
+
+    #hero{
+        max-width: 991px;
+    }
+
+    .section-info{
+        gap: 20px;
+    }
+
+    .section-info h1{
+        font-size: 30px;
+    }
+
+    .section-info p{
+        font-size: 15px;
+        max-width: 365px;
+    }
+
+    .hero-img{
+        width: 260px;
+        height: auto;
+    }
+
+    .button-container{
+        width: 350px;
+    }
+
+    .button-container a{
+        padding: 4px 25px;
+        font-size: 15px;
+    }
+
+    .info-text{
+        font-size: 14px;
+        padding: 30px 15px 0;
+    }
+    .open-menu {
+        display: flex;
+    }
+    /* CARDS SECTION */
+
+    #card_info{
+        width: 85%;
+    }
+
+    #card_info p{
+        font-size: 17px;
+    }
+
+    .cards-container{
+        gap: 60px;
+    }
+
+    /* ABOUT US SECTION */
+
+    #about{
+        max-width: 800px;
+        justify-content: column;
+        gap: 20px;
+        margin-top: 30px;
+    }
+
+    .text-container{
+        max-width: 650px;
+    }
+
+    .picture-about{
+        display: none;
+    }
+    .icons-about{
+        display: none;
+    }
+    .type-of-class{
+        width: 530px;
+    }
+
+    /* CONTACT US */
+
+    #contact{
+        max-width: 991px;
+        
+    }
+
+    .title-contact-us{
+        width: 100%;
+    }
+
+    .title-contact-us img{
+        height: 15px;
+    }
+
+    .grid-area{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    
+}
+
+
+/* MOBILE */
+
+@media (max-width:767.98px) {
+    
+    /* HEADER */
+    
+    .header{
+        position: sticky;
+    }
+
+    .header img{
+        margin: -60px;
+    }
+
+    .register ul{
+        display: none;
+    }
+
+    .icon-login {
+        display: flex;
+        margin: 8px 0 0 0;
+    }
+
+    /* HERO SECTION */
+
+    .info-text{
+        display: none;
+    }
+
+    main {
+        max-width: 100%;
+    }
+
+    #hero{
+        flex-direction: column;
+        align-items: center;
+        gap: 25px;
+    }
+
+    .hero-img{
+        width: 260px;
+    }
+
+    .section-info{
+        align-items: center;
+        text-align: center;
+        gap: 27px;
+    }
+
+    .section-info h1{
+        font-size: 40px;
+    }
+
+    .section-info p{
+        max-width: 330px;
+    }
+
+    .first-btn:hover{
+        padding: 5px 30px;
+        font-size: 20px;
+        transform: scale(0.88);
+    }
+
+
+    /* ABOUT US SECTION*/
+    #about{
+        flex-direction: column;
+    }
+    .text-container{
+        max-width: 85%;
+    }
+
+    .type-of-class{
+        box-shadow: 9px 8px 15px rgba(0, 0, 0, 0.07);
+        border-radius: 20px;
+        padding: 1.4rem;
+        font-size: 13px;
+    }
+
+    .one{
+        border: 1px solid #ffbf1c69;
+    }
+
+    .one h3{
+        color: #ffc01c;
+    }
+
+    .two{
+        border: 1px solid #ffbf1c69;
+    }
+
+    .two h3{
+        color: #ffbf1c69;
+    }
+
+    .text-about-section img{
+        display: none;
+        border: #ffbf1c69;
+    }
+    .icons-about{
+        display: none;
+    }
+
+
+    /* CONTACT US SECTION */
+
+    #contact{
+        margin: 0;
+    }
+    
+    .title-contact-us{
+        flex-direction: column;
+        justify-content: center;
+        gap: 0;
+    }
+
+    .title-contact-us h2{
+        font-size: 35px;
+    }
+
+    .title-contact-us img{
+        height: 13px;
+    }
+
+    .grid-area{
+        width: 95%;
+        gap: 20px;
+    }
+
+    .maps{
+        padding: 1.5rem;
+    }
+
+    .grid-social img{
+        width: 22px;
+    }
+
+    .grid-social p{
+        font-size: 12px;
+    }
+
+    .form{
+        padding: 40px 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .form input{
+        width: 270px;
+    }
+
+    .button-send{
+        width: 270px;
+    }
+}
